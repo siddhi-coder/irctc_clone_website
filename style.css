@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image: url('../images/LoginPageImage.webp');
+  background-image: url('images/LoginPageImage.webp');
 }
 
 /* Reusable Flex Container */
