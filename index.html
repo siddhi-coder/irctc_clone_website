@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- we use this code to link style with html -->
+    <link rel="stylesheet" href="style.css">
+    <!-- we add this line of code to get icon the tab section -->
+    <link rel="icon" href="../images\IRCTC-Logo.png" type="image/gif">
+
+    <!-- this link is to add the font awesome icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IRCTC Next Generation eTicket Booking</title>
+</head>
+
+<body>
+
+    <!-- Main Section Start -->
+
+    <div class="container">
+
+        <div class="box">
+            <!-- First Layer where we have given the header and the login page link to render  -->
+            <div class="boxLayerFirst">
+                <div class="createAccountText">Create Your account</div>
+                <div class="signIn"><a href="../Login_Page/index.html">Sign In</a></div>
+            </div>
+            <!-- menu for Basic Details , Personal Details ,  Address in second layer  -->
+            <div class="boxlayerSecond">
+                <!-- imp message for the user -->
+                <div class="message">
+                    <p class="firstMessage">GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIVATION</p>
+                    <p class="secondMessage"> Please use a valid E-Mail ID and mobile number in registration.</p>
+                </div>
+            </div>
+            <!-- creating the form to take the input from the user  -->
+            <div class="boxlayerthird">
+                <form action="" id="register">
+                <input type="text" placeholder="User Name" id="username" required><br>
+                <input type="password" placeholder= "Password" name="password" id="password" required><br>
+                <select name="selectlang" id="selectlang" required>
+                    <option value="">Preferred Language</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="english">English</option>
+                </select><br>
+                    <select name="question" id="question" required>
+                    <option value="">Security Question</option>
+                    <option value="question">What is your pet name ?</option>
+                    <option value="question">What is your school name ?</option>
+                    <option value="question">What is your best friend name ?</option>
+                    <option value="question">What is your fav date ?</option>
+                    <option value="question">What is your father middle name ?</option>
+                    <option value="question">Where was your first achivement celebrated ?</option>
+                </select><br>
+
+                <input type="text" name="securityQuestionAnswer" id="securityQuestionAnswer" placeholder="Security Answer" required>
+            <input type="submit" value="Register">
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Section End -->
+    <script src="script.js"></script>
+</body>
+
+</html>

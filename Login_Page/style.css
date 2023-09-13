@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url('../images/LoginPageImage.webp');
+}
+/* Reusable Flex Container */
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Reusable Logo Styling */
+.logo {
+    margin-left: 44px;
+    height: 14vh;
+}
+
+/* Reusable Image Styling */
+.img {
+    width: 150px;
+
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    background: #d6d6d630;
+    height:16vh;
+}
+.menu{
+    width:100%;
+}
+.menu ul{
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu li {
+    font-size: 18px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu li a:hover{
+   
+    color: darkblue;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+/* Indian Railways Logo */
+.indianRailwaysLogo {
+   
+    justify-content: start;
+}
+
+/* IRCTC Logo */
+.irctc {
+    justify-content: flex-end;
+}
+
+
+.container{
+    height: 100vh;
+    background: #242424ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: white;
+        padding: 22px;
+        width: 29%;
+}
+
+.box h1{
+    margin: 13px 0px;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 29px;
+    font-size: 20px;
+    margin: 12px 0px 0px 0px;
+}
+
+input[type="password"]{
+    width: 100%;
+    height: 29px;
+    font-size: 20px;
+    margin: 2px 0px;
+}
+
+input[type="submit"],input[type="reset"]{
+    background: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 4px 8px 0px 0px;
+}
+/* footer */
+
+.footer{
+    color: white;
+    height: 55px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.footerFirstSection,.footerSecondSection{
+ 
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #020239;
+    align-items: center;
+    height: 100%;
+
+}
+
+.footerSecondSection{
+    margin-top: 8px;
+    height: 17vh;
+    align-items: start;
+}
+
+
+.text{
+    font-size: 21px;
+}
+
+.socialMediaLink{
+    font-size: 27px;
+}
+

@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+/* Reusable Flex Container */
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Reusable Logo Styling */
+.logo {
+  width: 20%;
+  margin-left: 44px;
+  height: 14vh;
+}
+
+/* Reusable Image Styling */
+.img {
+  width: 150px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  background: #d6d6d630;
+  height: 16vh;
+}
+.menu {
+  width: 100%;
+}
+.menu ul {
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu li {
+  font-size: 18px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li a:hover {
+  color: darkblue;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: white;
+  font-size: 18px;
+  border-radius: 10px;
+}
+/* Indian Railways Logo */
+.indianRailwaysLogo {
+  justify-content: start;
+}
+
+/* IRCTC Logo */
+.irctc {
+  justify-content: flex-end;
+}
+.BackgroundImage img {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+}
+.headertext {
+  position: relative;
+  float: left;
+  margin-top: 31px;
+  margin-left: 24px;
+}
+.IndianRailwaysText {
+  font-size: 36px;
+  color: white;
+  font-weight: 900;
+  margin-right: 41px;
+}
+
+.IndianRailwaysOption {
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+  margin-right: 41px;
+  text-align: center;
+}
+
+.form {
+  position: relative;
+  background: #ffffffa8;
+  width: 41%;
+  float: right;
+  margin: 99px;
+}
+
+input[name="stationList"],
+input[name="classes"],
+input[name="type_ticket"] {
+  width: 232px;
+  height: 34px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+input[name="type_ticket"] {
+  margin-left: 28px;
+}
+input[type="date"] {
+  width: 100%;
+  height: 34px;
+  margin: 10px 28px 10px 11px;
+  font-size: 15px;
+}
+
+input[type="checkbox"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fifthLayer {
+  margin-left: 26px;
+  font-size: 18px;
+  color: black;
+}
+.firstLayer,
+.secondLayer,
+.thirdLayer,
+.fourthLayer,
+.sixthLayer {
+  display: flex;
+  margin-left: 13px;
+}
+
+.search {
+  background: #ff8303d4;
+  border: none;
+  padding: 10px;
+  width: 72px;
+  margin-left: 12px;
+  height: 34px;
+  margin: 10px;
+  border-radius: 6px;
+}
+.search a {
+  color: black;
+  text-decoration: none;
+}
+.arrow {
+  font-size: 20px;
+  margin-top: 18px;
+  color: darkblue;
+}
+.inde_image img,
+.g20_image img {
+  width: 150px;
+}
+
+.g20_image img {
+  margin-top: 10px;
+  margin-left: 13px;
+}
+.bookTicket h3 {
+  color: darkblue;
+  font-size: 26px;
+  margin-top: 38px;
+  margin-left: 13px;
+}
+
+/* Second Section  */
+.SecondSection {
+  background-color: #eeeeeef5;
+  padding: 16px 0;
+}
+.title {
+  margin: 96vh 0 0 47vw;
+}
+
+.box {
+  width: 28%;
+  border: 1px solid #ccc;
+  margin: 22px;
+  background: white;
+  padding: 10px;
+}
+.holidayTitle {
+  font-size: 26px;
+  margin: 13px 0px;
+  font-weight: 600;
+}
+h1 {
+  font-size: 42px;
+}
+.error {
+  display: flex;
+}
+
+#error1,
+#error2 {
+  margin-left: 27px;
+  color: red;
+  font-size: 17px;
+}
+
+#error2 {
+  margin-left: 57px;
+}
+.paragraph {
+  font-size: 17px;
+  line-height: 23px;
+  text-align: justify;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 6vw;
+}
+/* Third Section */
+.ThirdSection{
+  padding: 14px;
+}
+.ThirdSectionFlexPart {
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.ThirdSectionFirstLayer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.icon {
+  font-size: 50px;
+  border: 1px solid black;
+  padding: 17px;
+  border-radius: 50%;
+}
+
+.icon:hover{
+    background: #020239;
+    color: white;
+    outline: black;
+}
+
+.headingType {
+  font-size: 23px;
+  text-align: center;
+  margin-top: 9px;
+}
+
+/* footer */
+
+.footer {
+  color: white;
+  height: 55px;
+  text-align: center;
+  width: 100%;
+}
+
+.footerFirstSection,
+.footerSecondSection {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: #020239;
+  align-items: center;
+  height: 100%;
+}
+
+.footerSecondSection {
+  margin-top: 8px;
+  height: 17vh;
+  align-items: start;
+}
+
+.text {
+  font-size: 21px;
+}
+
+.socialMediaLink {
+  font-size: 27px;
+}
