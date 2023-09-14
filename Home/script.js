@@ -57,11 +57,6 @@ function Validation() {
   return !(fromError.innerHTML || toError.innerHTML || classesError.innerHTML || typeticketError.innerHTML || checkboxError.innerHTML);
 }
 
-
-
-
-
-
 // Define an array of holiday data (you can add more items as needed)
 const holidaysData = [
     {
