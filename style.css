@@ -86,7 +86,7 @@ body{
 .box {
   border: 1px solid #ccc;
   width: 40%;
-  background-color: white;
+  background-color: #ffffff6b;;
   margin: 14px;
 }
 
@@ -181,6 +181,8 @@ input[type="submit"]{
 .socialMediaLink {
   font-size: 27px;
 }
+
+
 /* mobile view */
 @media screen and (max-width:700px) {
   .box{
@@ -188,4 +190,3 @@ input[type="submit"]{
     margin: 13px;
   }
 }
-  
