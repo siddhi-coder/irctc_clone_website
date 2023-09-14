@@ -262,7 +262,7 @@ input[name="type_ticket"] {
 }
 
 input[type="date"] {
-  width: 100%;
+  width: 89%;
   height: 34px;
   margin: 10px 28px 10px 11px;
   font-size: 15px;
