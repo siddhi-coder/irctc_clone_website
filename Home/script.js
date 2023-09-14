@@ -11,25 +11,52 @@ function myFunction() {
 
 // Validation Function
 function Validation() {
-    const departure = document.getElementById("fromList").value;
-    const destination = document.getElementById("toList").value;
-    const fromError = document.getElementById("error1");
-    const toError = document.getElementById("error2");
+  // Get form input values
+  const departure = document.getElementById("fromList").value;
+  const destination = document.getElementById("toList").value;
+  const classes = document.getElementById("classes").value;
+  const type_ticket = document.getElementById("type_ticket").value;
+  const checkbox = document.getElementById("checkbox").checked; // Note: Use .checked for checkboxes
 
-    if (departure == "") {
-        fromError.innerHTML = "Please enter from station name";
-    } else {
-        fromError.innerHTML = ""; // Hide the text while preserving spacing
-        
-    }
-    if (destination == "") {
-        toError.innerHTML = "Please enter To station name";
-    } else {
-        toError.innerHTML = ""; // Hide the text while preserving spacing
-        
+  // Get error message elements
+  const fromError = document.getElementById("error1");
+  const classesError = document.getElementById("classesError");
+  const typeticketError = document.getElementById("typeticketError");
+  const toError = document.getElementById("checkboxError");
 
-    }
+  // Reset error messages
+  fromError.innerHTML = "";
+  toError.innerHTML = "";
+  classesError.innerHTML = "";
+  typeticketError.innerHTML = "";
+
+  // Check for empty values and display error messages
+  if (departure.trim() === "") {
+      fromError.innerHTML = "Please enter the departure station name";
+  }
+
+  if (destination.trim() === "") {
+      toError.innerHTML = "Please enter the destination station name";
+  }
+
+  if (classes === "") {
+      classesError.innerHTML = "Please select a class";
+  }
+
+  if (type_ticket === "") {
+      typeticketError.innerHTML = "Please select a ticket type";
+  }
+
+  if (!checkbox) {
+      checkboxError.innerHTML = "Please accept the terms and conditions";
+  }
+
+  // Add additional validation rules if needed
+
+  // Return false to prevent form submission if there are errors
+  return !(fromError.innerHTML || toError.innerHTML || classesError.innerHTML || typeticketError.innerHTML || checkboxError.innerHTML);
 }
+
 
 
 
