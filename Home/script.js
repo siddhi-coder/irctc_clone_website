@@ -47,18 +47,15 @@ function Validation() {
       typeticketError.innerHTML = "Please select a ticket type";
   }
 
-  if (!checkbox) {
-      checkboxError.innerHTML = "Please accept the terms and conditions";
-  }
-
+  
   // Check if all validation checks pass
-  if (!(fromError.innerHTML || toError.innerHTML || classesError.innerHTML || typeticketError.innerHTML || checkboxError.innerHTML)) {
+  if (!(fromError.innerHTML || toError.innerHTML || classesError.innerHTML || typeticketError.innerHTML )) {
     // If all checks pass, open the new page
     window.location.href = "../train_list/index.html";
 }
 
 // Return false to prevent form submission if there are errors
-return !(fromError.innerHTML || toError.innerHTML || classesError.innerHTML || typeticketError.innerHTML || checkboxError.innerHTML);
+return !(fromError.innerHTML || toError.innerHTML || classesError.innerHTML || typeticketError.innerHTML);
 }
 
 // Define an array of holiday data (you can add more items as needed)
