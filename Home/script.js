@@ -59,7 +59,6 @@ function Validation() {
 // Return false to prevent form submission if there are errors
 return !(fromError.innerHTML || toError.innerHTML || classesError.innerHTML || typeticketError.innerHTML);
 }
-
 // Define an array of holiday data (you can add more items as needed)
 const holidaysData = [
     {
