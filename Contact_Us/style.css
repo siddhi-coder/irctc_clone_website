@@ -1,135 +1,452 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-}
-.container{
-    background: linear-gradient(0deg, rgb(0 0 0 / 79%), rgb(0 0 0 / 30%)), url("../images/contact_us_Image.jpg");
-    background-size:cover;
-    height: 100vh;
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
 }
 
-
-.box{
-    background: #000000a8;
-    padding: 20px;
-}
-.box h1{
-    color:white;
-    text-align: center;
-}
-
-.box p{
-    color: white;
-    margin: 27px 0;
-    font-size: 17px;
-    line-height: 25px;
-}
-.box p a{
-    color: #93a2f7;
-}
 /* Reusable Flex Container */
 .flex-container {
-    display: flex;
-    width: 100%;
+  display: flex;
 }
 
 /* Reusable Logo Styling */
 .logo {
-    margin-left: 44px;
-    height: 14vh;
+  width: 20%;
+  margin-left: 44px;
+  height: 14vh;
 }
 
 /* Reusable Image Styling */
 .img {
-    width: 150px;
-
+  width: 150px;
 }
 
 /* Header Styles */
 .header {
-    display: flex;
-    background: #d6d6d630;
-    height:16vh;
-}
-.menu{
-    width:100%;
-}
-.menu ul{
-    display: flex;
-    height: 100%;
-    list-style-type: none;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  background: #d6d6d630;
+  height: 16vh;
 }
 
-.menu li {
-    font-size: 18px;
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
 }
 
-.menu li a{
-    text-decoration: none;
-    color: black;
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  z-index: 100;
+  height: 88px;
 }
 
-.menu li a:hover{
-   
-    color: darkblue;
-    border: 1px solid #ccc;
-    padding: 15px;
-    background-color: white;
-    font-size: 18px;
-    border-radius: 10px;
-
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 51px;
+  margin-top: 19px;
+  align-items: center;
 }
+
+.menu-items {
+  display: flex;
+  /* margin-top: -75px; */
+  width: 100%;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  margin-left: 44px;
+  height: 14vh;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #020239;
+}
+
 /* Indian Railways Logo */
 .indianRailwaysLogo {
-   
-    justify-content: start;
+  justify-content: start;
 }
 
 /* IRCTC Logo */
 .irctc {
-    justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.mainContainer {
+  background: linear-gradient(0deg, rgba(56, 56, 56, 0.54), rgba(44, 44, 44, 0.69)), url(../images/contact_us_Image.jpg);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 77.9vh;
+  align-items: center;
+  margin-top: -15px;
+}
+.box {
+  border: 1px solid #ccc;
+  margin: 209px;
+  background: #00000070;
+  padding: 10px;
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+.layer{
+  margin: 10px;
+  font-size: 17px;
+  color: white;
+  line-height: 23px;
+  word-spacing: 3px;
+}
+mark{
+  margin:0 5px;
+  padding: 0px 14px;
+  color: black;
 }
 
 /* footer */
-
-.footer{
-    color: white;
-    height: 55px;
-    text-align: center;
-    width: 100%;
-
+.footer {
+  color: white;
+  height: 55px;
+  text-align: center;
+  width: 100%;
 }
 
-.footerFirstSection,.footerSecondSection{
- 
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background: #020239;
-    align-items: center;
-    height: 100%;
-
+.footerFirstSection,
+.footerSecondSection {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: #020239;
+  align-items: center;
+  height: 100%;
 }
 
-.footerSecondSection{
-    margin-top: 8px;
-    height: 17vh;
-    align-items: start;
+.footerSecondSection {
+  margin-top: 8px;
+  height: 17vh;
+  align-items: start;
 }
 
-
-.text{
-    font-size: 21px;
+.text {
+  font-size: 21px;
 }
 
-.socialMediaLink{
+.socialMediaLink {
+  font-size: 27px;
+}
+
+/* mobile view */
+@media screen and (max-width: 700px) {
+  .HeaderIcon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .IndianRailwaysText {
     font-size: 27px;
+    color: white;
+    font-weight: 900;
+    margin-right: 41px;
+  }
+
+  .IndianRailwaysOption {
+    font-size: 17px;
+    color: white;
+    font-weight: 900;
+    margin-right: 41px;
+    text-align: center;
+  }
+
+  .form {
+    position: relative;
+    background: #ffffffa8;
+    width: 81%;
+    float: right;
+    margin: 10px 33px;
+  }
+
+  .bookTicket h3 {
+    color: darkblue;
+    font-size: 15px;
+    margin-top: 13px;
+    margin-left: 13px;
+  }
+
+  .inde_image img,
+  .g20_image img {
+    width: 53px;
+  }
+
+  .secondLayer,
+  .thirdLayer,
+  .fourthLayer,
+  .sixthLayer {
+    display: block;
+    margin-left: 13px;
+  }
+
+  .arrow {
+    text-align: center;
+    margin-left: 108px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 13px;
+  }
+
+  input[name="stationList"],
+  input[name="classes"],
+  input[name="type_ticket"] {
+    width: 232px;
+    height: 34px;
+    margin: 3px 2px 3px 2px;
+    font-size: 15px;
+  }
+
+  input[type="date"] {
+    width: 94%;
+    height: 34px;
+    margin: 3px 2px 3px 2px;
+    font-size: 15px;
+  }
+
+  .fifthLayer {
+    margin-left: 26px;
+    font-size: 9px;
+    color: black;
+  }
+
+  .search {
+    background: #ff8303d4;
+    border: none;
+    padding: 8px;
+    font-size: 13px;
+    width: 60px;
+    margin-left: 12px;
+    height: 28px;
+    margin: 5px;
+    border-radius: 6px;
+  }
+
+  .title {
+    margin: 94vh 0 0 34vw;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .holidayTitle {
+    font-size: 23px;
+  }
+
+  .ThirdSectionFlexPart {
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+  }
+
+  .icon {
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 17px;
+    border-radius: 50%;
+  }
+
+  .flight,
+  .Hotel,
+  .RAILDRISHTI,
+  .e-catering,
+  .bus {
+    margin: 13px;
+  }
+
+  .headingType {
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 14px;
+    margin: 23px;
+  }
+
+  .socialMediaLink {
+    font-size: 21px;
+    margin: 29px;
+  }
+.logo{
+  width: 22%;
+  height: 68px;
+  margin-top: -5px;
+}
+
+  .menu {
+    width: 47%;
+  }
+
+  .indianRailwaysLogo {
+    justify-content: start;
+    margin-left: -39px;
+    margin-top: 16px;
+  }
+
+  .irctc {
+    display: none;
+  }
+
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    background: #fff;
+    height: 112vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    overflow: scroll;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    position: absolute;
+    right: 15px;
+    font-size: 2.5rem;
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  .mainContainer {
+    background: linear-gradient(0deg, rgba(56, 56, 56, 0.54), rgba(44, 44, 44, 0.69)), url(../images/contact_us_Image.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+}
+
+.box {
+  border: 1px solid #ccc;
+  margin: 51px 13px;
+  background: #00000070;
+  padding: 10px;
+}
+
+.layer {
+  margin: 10px;
+  font-size: 15px;
+  color: white;
+  line-height: 21px;
+  word-spacing: 3px;
+}
 }
 
