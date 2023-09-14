@@ -20,6 +20,8 @@ function Validation() {
 
   // Get error message elements
   const fromError = document.getElementById("error1");
+  const toError = document.getElementById("error2");
+
   const classesError = document.getElementById("classesError");
   const typeticketError = document.getElementById("typeticketError");
   const toError = document.getElementById("checkboxError");
