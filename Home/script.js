@@ -7,58 +7,6 @@ function myFunction() {
   }
 }
 
-
-
-// Validation Function
-function Validation() {
-  // Get form input values
-  const departure = document.getElementById("fromList").value;
-  const destination = document.getElementById("toList").value;
-  const classes = document.getElementById("classes").value;
-  const type_ticket = document.getElementById("type_ticket").value;
-  const checkbox = document.getElementById("checkbox").checked; // Note: Use .checked for checkboxes
-
-  // Get error message elements
-  const fromError = document.getElementById("error1");
-  const toError = document.getElementById("error2");
-
-  const classesError = document.getElementById("classesError");
-  const typeticketError = document.getElementById("typeticketError");
-  const toError = document.getElementById("checkboxError");
-
-  // Reset error messages
-  fromError.innerHTML = "";
-  toError.innerHTML = "";
-  classesError.innerHTML = "";
-  typeticketError.innerHTML = "";
-
-  // Check for empty values and display error messages
-  if (departure.trim() === "") {
-      fromError.innerHTML = "Please enter the departure station name";
-  }
-
-  if (destination.trim() === "") {
-      toError.innerHTML = "Please enter the destination station name";
-  }
-
-  if (classes === "") {
-      classesError.innerHTML = "Please select a class";
-  }
-
-  if (type_ticket === "") {
-      typeticketError.innerHTML = "Please select a ticket type";
-  }
-
-  
-  // Check if all validation checks pass
-  if (!(fromError.innerHTML || toError.innerHTML || classesError.innerHTML || typeticketError.innerHTML )) {
-    // If all checks pass, open the new page
-    window.location.href = "../train_list/index.html";
-}
-
-// Return false to prevent form submission if there are errors
-return !(fromError.innerHTML || toError.innerHTML || classesError.innerHTML || typeticketError.innerHTML);
-}
 // Define an array of holiday data (you can add more items as needed)
 const holidaysData = [
     {
