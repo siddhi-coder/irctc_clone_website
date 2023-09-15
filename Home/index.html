@@ -64,7 +64,7 @@
 
             <!-- form header with logo  -->
             <div class="form">
-                <form onsubmit="return Validation();" action="submit.php" method="post">
+
                 <!-- first layer of the form -->
                 <div class="firstLayer">
                     <div class="inde_image">
@@ -137,30 +137,28 @@
                         <option value="Lower Berth">
                     </datalist>
                 </div>
-                <p id="typeticketError"></p>
 
                 <!-- fifth layer of the form -->
                 <div class="fifthLayer">
-                    <input type="checkbox" name="disability_concession" id="checkbox">
+                    <input type="checkbox" name="disability_concession" id="disability_concession">
                     <label for="#">People With Disability Concession</label>
-                    <input type="checkbox" name="flexible_date" id="checkbox">
+                    <input type="checkbox" name="flexible_date" id="flexible_date">
                     <label for="#">Flexible with date</label><br>
-                    <input type="checkbox" name="train_berth" id="checkbox">
+                    <input type="checkbox" name="train_berth" id="train_berth">
                     <label for="#">Train with available berth</label>
-                    <input type="checkbox" name="train_berth" id="checkbox">
+                    <input type="checkbox" name="train_berth" id="train_berth">
                     <label for="#">Railway pass concession</label>
                 </div>
-                <p id="checkboxError"></p>
 
-                <!-- sixth layer of the form  -->
-                <div class="sixthLayer">
-                    <input type="submit" value="Submit">
+                <!-- sixth layer of the form -->
+<div class="sixthLayer">
+    <button onclick="window.location.href='../train_list/index.html'" class="search">Search</button>
+</div>
 
-                </div>
 
             </div>
         </div>
-    </form>
+
     </div>
 
     </div>
