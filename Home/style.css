@@ -262,7 +262,7 @@ input[name="type_ticket"] {
 }
 
 input[type="date"] {
-  width: 89%;
+  width: 100%;
   height: 34px;
   margin: 10px 28px 10px 11px;
   font-size: 15px;
@@ -600,9 +600,9 @@ img {
   }
 
   .logo {
-    width: 28%;
-    height: 81px;
-  }
+    width: 20%;
+    height: 77px;
+}
 
   .menu {
     width: 47%;
@@ -618,4 +618,5 @@ img {
     display: none;
   }
 }
+
 
