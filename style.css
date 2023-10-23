@@ -98,10 +98,14 @@ body{
 }
 
 .box .createAccountText {
-  font-size: 25px;
-  margin: 10px 10px;
-  font-weight: 500;
-  color: #020239;
+    font-size: 25px;
+    margin: 10px 10px;
+    font-weight: 500;
+    color: darkblue;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 10px;
+
 }
 
 .signIn {
