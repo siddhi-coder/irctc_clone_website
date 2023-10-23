@@ -13,3 +13,7 @@ JavaScript: Used for interactive elements, form validation, and dynamic content 
 2. Open the index.html file in a web browser to access the IRCTC Clone Website.
 3. Explore the various features, including train search and ticket booking.
 F4. or a live demonstration, visit the <a href="https://siddhi-coder.github.io/irctc_clone_website/">live link.</a>
+
+
+<b>Contributing:</b>
+Contributions to the project are welcome. If you find any issues or have suggestions for improvements, please create a new issue or submit a pull request on the project's GitHub repository.
