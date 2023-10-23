@@ -115,7 +115,13 @@ body{
 }
 
 .signIn a {
-  color: rgb(251, 121, 43);
+ font-size: 25px;
+    margin: 10px 10px;
+    font-weight: 500;
+    color: darkblue;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 10px;
 }
 
 /* second layer */
